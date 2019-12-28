@@ -1,7 +1,7 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.3.50"
+    id("org.jetbrains.kotlin.jvm") version "1.3.61"
     application
-	id("com.github.johnrengelman.shadow") version "5.1.0"
+	id("com.github.johnrengelman.shadow") version "5.2.0"
 	id("de.fayard.buildSrcVersions") version "0.6.1"
 }
 
@@ -34,7 +34,7 @@ application {
 
 tasks {
 	// Target Java 8 with Kotlin
-	withType<KotlinCompile> {
+	withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 		kotlinOptions.jvmTarget = "1.8"
 	}
 	// use ALL as the default distributionType
