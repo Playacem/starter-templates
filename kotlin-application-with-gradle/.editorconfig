@@ -20,6 +20,6 @@ trim_trailing_whitespace = false
 end_of_line = crlf
 
 ; Whitespace sensitive
-[*.{yaml,yml}]
+[*.{yaml, yml}]
 indent_size = 2
 indent_style = space
